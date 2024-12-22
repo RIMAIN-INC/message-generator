@@ -12,3 +12,6 @@ const motivationalMessages = [
 ];
 
 
+const displayMessage = () => {
+    return null;
+}
