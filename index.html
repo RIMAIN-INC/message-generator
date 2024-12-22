@@ -4,7 +4,6 @@
         <title>message generator</title>
         <meta name="viewport" content="device=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./resources/styles/style.css">
-        <script src="./resources/js/main.js"></script>
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <Body>
@@ -15,19 +14,21 @@
                         <h2>Message of the Day</h2>
                     </div>
                     <div class="quote-area">
-                        <p class="message">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum earum veniam vero accusantium ipsa sit a delectus voluptatem similique mollitia!</p>
+                        <p class="message" id="message-area">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum earum veniam vero accusantium ipsa sit a delectus voluptatem similique mollitia!</p>
                     </div>
-                    
+
                 </div>
                 <div class="action-container">
                     <div class="copy-ct">
-                        <button class="copy-btn btn-hover" id="copy-btn"><i class='bx bx-copy'></i></button>
+                        <button class="copy-btn btn-hover" onclick="copyMessage()" id="copy-btn"><i class='bx bx-copy'></i></button>
                     </div>
                     <div class="message-ct">
-                        <button class="message-btn btn-hover" id="message-btn">New Message</button>
+                        <button class="message-btn btn-hover" onclick="displayMessage()" id="message-btn">New Message</button>
                     </div>
                 </div>
             </section>
         </main>
+
+        <script src="./resources/js/main.js"></script>
     </Body>
 </html>
