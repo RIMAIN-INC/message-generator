@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* universal styles */
+
+:root {
+    --clr-white-a0:#ddd; /*fonts*/
+    --clr-primary-a40:#ee9e8a; /*icons*/
+    --clr-primary-a50:#f4b1a0; /*button*/
+    --clr-surface-a20:#e1775e; /*bg of btns*/
+    --bg-surface-a10:#3c3535;
+
+    /** Dark theme primary colors */
+    --clr-primary-a0: #881b13;
+    --clr-primary-a10: #983829;
+    --clr-primary-a20: #a85241;
+    --clr-primary-a30: #b76a59;
+    --clr-primary-a40: #c58273;
+    --clr-primary-a50: #d29a8d;
+
+    /** Dark theme surface colors */
+    --clr-surface-a0: #121212;
+    --clr-surface-a10: #282828;
+    --clr-surface-a20: #3f3f3f;
+    --clr-surface-a30: #575757;
+    --clr-surface-a40: #717171;
+    --clr-surface-a50: #8b8b8b;
+
+    /** Dark theme tonal surface colors */
+    --clr-surface-tonal-a0: #1f1512;
+    --clr-surface-tonal-a10: #342a28;
+    --clr-surface-tonal-a20: #4a413f;
+    --clr-surface-tonal-a30: #625957;
+    --clr-surface-tonal-a40: #7a7271;
+    --clr-surface-tonal-a50: #938d8b;
+
+    /** Examples */ 
+    .bg-primary {
+    color: var(--clr-primary-a50); 
+    background-color: var(--clr-surface-a0); 
+}
+
+    
+
+
+
+}
+
+body {
+    background-color: var(--bg-surface-a10);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--clr-white-a0);
+    background-color: var(--clr-surface-a0); 
+    font-family: "Ranchers";
+}
+
+
+main {
+    background-color: var(--clr-surface-a10);
+    border-radius: 1.5rem;
+    width: 605px;
+    /* padding: 1.5rem 0.8rem 0.3rem 0.8rem; */
+    padding: 30px 30px 25px;
+}
+
+.message-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.action-container {
+    display: inline-flex;
+    padding: 0.5rem 0.8rem;
+    flex-wrap: wrap;
+}
+
+.copy-ct {
+    flex: 1;
+}
+
+.message{
+
+    line-height: 2em;
+}
+
+.quote-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+}
+
+.copy-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline:none;
+    background-color: var(--clr-primary-a50);
+    color: var(--clr-surface-a0);
+    cursor: pointer;
+}
+
+
+.message-btn {
+    padding: 0.8rem 1rem;
+    border-radius: 1.5em;
+    outline: none;
+    border: none;
+    background-color: var(--clr-primary-a50);
+    color: var(--clr-surface-a0);
+    font-family: "Ranchers";
+    font-weight: lighter;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.btn-hover:hover {
+    background-color: var(--clr-primary-a20);
+}
+
+.bx {
+    font-size: 1.2rem;
+}
