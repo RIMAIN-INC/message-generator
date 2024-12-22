@@ -40,7 +40,7 @@ const displayMessage = () => {
 
 displayMessage();
 
-// copy message to clipboard
+// copy message to clipboard => function
 const copyMessage = () => {
 
     navigator.clipboard.writeText(messageID.textContent)
